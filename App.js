@@ -1,20 +1,47 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from "react-native";
+import AddTask from "./src/AddTask";
+import TaskContext from "./src/TaskContext";
+import TasksList from "./src/TasksList";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <TaskContext>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            options={{
+              headerTitle: " Home",
+              headerTintColor: "#fff",
+              headerStyle: {
+                backgroundColor: "#009297",
+              },
+            }}
+            name="TasksList"
+            component={TasksList}
+          />
+          <Stack.Screen
+            options={{
+              headerTitle: "Add a new task",
+              headerTintColor: "#fff",
+              headerStyle: {
+                backgroundColor: "#009297",
+              },
+            }}
+            name="AddTask"
+            component={AddTask}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </TaskContext>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#0EB8BE",
   },
 });
