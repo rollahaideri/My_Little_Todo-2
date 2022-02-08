@@ -30,3 +30,19 @@ A simple todo app created by using expo managed workflow in react-native framewo
 [![image](https://www.linkpicture.com/q/Skärmavbild-2022-02-08-kl.14.12.51.png)](https://www.linkpicture.com/view.php?img=LPic62026c64c311d672097403)
 [![image](https://www.linkpicture.com/q/Skärmavbild-2022-02-08-kl.14.08.36.png)](https://www.linkpicture.com/view.php?img=LPic62026bf9105fa538030829)
 
+
+
+## Feedback
+
+If you have any feedback, please reach out to me at rohullahhaideri@gmail.com
+
+
+## 🚀 About Me
+I'm a iOS & Android developer student...
+
+
+## Authors
+
+- [@rollahaideri](https://github.com/rollahaideri)
+
+
